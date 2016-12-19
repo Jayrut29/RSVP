@@ -1,0 +1,80 @@
+<body class="signonbody">
+
+<header>
+    <h1 class="headername">RSVP</h1>
+<nav>
+
+
+    <a href="#">Welcome, {{name}}</a>
+    <a href="/home">Home</a>
+    <a href="/logout">Logout</a>
+
+</nav>
+</header>
+
+<br><br>
+
+<div class="homebuttonbox">
+    <br>
+
+            <FORM>
+                <input type="button" class="buttonimage" Value="Browse Events" Onclick="window.location.href='/home'">
+                <input type="button" Value="Create Event" Onclick="window.location.href='/createevent'">
+                <input type="button" Value="Event Attendance" Onclick="window.location.href='/eventattendance'">
+                <input type="button" Value="My Event Attendance" Onclick="window.location.href='/myeventattendance'">
+            </FORM>
+
+</div>
+
+
+<br><br><br><br><br><br><br><br><br>
+
+
+<div class="eventbox">
+
+
+
+{{#each events}}
+
+        <img class='eventimage' src='{{this.image}}'><br>
+    <!--<img class='eventimage' src='{{this.image}}' height="200" width="450"><br>-->
+        <b>Event Name:</b> {{this.event_name}}<br>
+        <b>Start Date:</b> {{this.start_date}}<br>
+        <b>End Date:</b> {{this.end_date}}<br>
+        <b>Start Time:</b> {{this.start_time}}<br>
+        <b>End Time:</b> {{this.end_time}}<br>
+        <b>Description:</b> {{this.description}}<br>
+        <b>Location:</b> {{this.location}}<br><br>
+
+
+
+
+    <form action="/createeventattendance" method="post">
+        <input type="hidden" name="evt_id" value="{{this.id}}">
+        <input type="hidden" name="user_id" value="">
+        <input type="hidden" name="status" value="Attending">
+        <input id="commentbox" type="text" name="comments" placeholder="Comments Here (eg. Can't Wait)" value=""><br><br>
+        <input type="hidden" name="event_name" value="{{this.event_name}}">
+        <input type="hidden" name="name" value="">
+        <input type="hidden" name="start_time" value="{{this.start_time}}">
+        <input type="hidden" name="end_time" value="{{this.end_time}}">
+        <input type="hidden" name="start_date" value="{{this.start_date}}">
+        <input type="hidden" name="end_date" id="{{this.end_date}}">
+        <input type="submit" value="Attend"></input>
+
+    </form>
+
+
+
+
+
+
+
+
+
+{{/each}}
+
+
+
+
+    <!--<script src="/javascripts/app.js"></script>-->

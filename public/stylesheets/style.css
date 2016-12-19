@@ -1,0 +1,486 @@
+@-ms-viewport{
+    width: device-width;
+}
+
+.homebody {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #5C258D; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #5C258D , #4389A2); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #5C258D , #4389A2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.signonbody {
+ background: #F9F9F9;
+}
+
+
+.registerform {
+    display: inline-block;
+    text-align: center;
+    background: white;
+    padding: 50px 50px 20px 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 130px;
+    border-color: #EFEFEE;
+    border-style: solid;
+    border-width: 2px;
+
+}
+
+
+.registertext {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+
+}
+
+.form {
+    display: inline-block;
+    text-align: center;
+    background: white;
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    border-color: #EFEFEE;
+    border-style: solid;
+    border-width: 2px;
+
+}
+
+.homelinks {
+  color: white;
+  text-decoration: none;
+ }
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.tagline {
+  color: white;
+  text-align:center;
+  font-size: 25px;
+  margin-top: -20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.name {
+  color:white;
+  font-family: 'Pacifico', cursive;
+  font-size: 75px;
+  text-align:center;
+  margin-top: 200px;
+  padding-top:25px;
+}
+
+.headername {
+    color: #48739d; /* fallback for old browsers */
+    color: -webkit-linear-gradient(to left, #5C258D , #4389A2); /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to left, #5C258D , #4389A2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Pacifico', cursive;
+    font-size: 75px;
+    margin-top: 25px;
+    margin-left: 550px;
+    float:left;
+}
+
+.registerbutton {
+   background-color: transparent;
+   border-color: white;
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+
+}
+
+.loginbutton {
+  background-color: transparent;
+  border-color: white;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  float:right;
+  /*margin-top: -500px;*/
+
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+
+}
+
+.events {
+    border: solid black;
+}
+
+header { color: #333333; line-height: 108px; }
+
+
+header nav {
+    font-size: 18px; float: right;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #333; margin: 0 5px;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+.homebuttonbox {
+    display: inline-block;
+    text-align: center;
+    background: rgba(255,255,255,.9);
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    border-color: #EFEFEE;
+    border-style: solid;
+    border-width: 2px;
+    width: 70%;
+
+
+}
+
+
+.eventbox {
+    display: inline-block;
+    background: rgba(255,255,255,.9);
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    border-color: #EFEFEE;
+    border-style: solid;
+    border-width: 2px;
+    width: 70%;
+
+}
+
+
+
+.createeventbox {
+    display: inline-block;
+    /*text-align: center;*/
+    background: rgba(255,255,255,.9);
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    border-color: #EFEFEE;
+    border-style: solid;
+    border-width: 2px;
+    width: 70%;
+
+}
+
+#commentbox {
+    width: 50%;
+    height: 100px;
+}
+
+.btn-upload {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+
+}
+.btn-upload input[type=file] {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    display: block;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+.btn-upload .btn{
+    padding: 8px 20px;
+    background: url("http://mdepinet.org/wp-content/uploads/person-placeholder.jpg");
+    background-size:100px;
+    background-repeat: no-repeat;
+    border: 1px solid #EFEFEE;
+    color: #EFEFEE;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+.btn-upload:hover .btn{
+    padding: 8px 20px;
+    background: url("http://mdepinet.org/wp-content/uploads/person-placeholder.jpg");
+    background-size:100px;
+    background-repeat: no-repeat;
+    color: #888888;
+    border: 1px solid #48739d;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.btn-uploadevent {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+
+}
+.btn-uploadevent input[type=file] {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    display: block;
+    width: 300px;
+    height: 200px;
+}
+.btn-uploadevent .btn{
+    padding: 8px 20px;
+    background: white;
+    border: 1px solid #EFEFEE;
+    color: #EFEFEE;
+    width: 300px;
+    height: 200px;
+}
+.btn-uploadevent:hover .btn{
+    padding: 8px 20px;
+    background: white;
+    color: #888888;
+    border: 1px solid #888888;
+    width: 300px;
+    height: 200px;
+}
+
+.buttonimage {
+    background:url('public/images/search.png') no-repeat left center;
+
+}
+
+
+.btn span.icon {
+    background: url("/public/images/search.png") no-repeat;
+    float: left;
+    width: 10px;
+    height: 40px;
+}
+
+.eventimage {
+    height: 200px;
+    width:450px;
+}
+
+.attendees {
+    float: right;
+    /*border-color: #EFEFEE;*/
+    /*border-style: solid;*/
+    /*border-width: 2px;*/
+    display: inline-block;
+    background: rgba(255,255,255,.9);
+    /*padding: 50px;*/
+    position: absolute;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 20%;
+}
+
+/*#file {*/
+    /*background-color:#48739d;*/
+    /*color:white;*/
+
+/*}*/
+
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+.stopfade {
+    opacity: .5;
+}
+
+
+@media (min-width: 550px) {
+    .headername {
+        color: #48739d; /* fallback for old browsers */
+        color: -webkit-linear-gradient(to left, #5C258D , #4389A2); /* Chrome 10-25, Safari 5.1-6 */
+        color: linear-gradient(to left, #5C258D , #4389A2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-family: 'Pacifico', cursive;
+        font-size: 75px;
+        position: absolute;
+        display: inline-block;
+        /*text-align: center;*/
+        display: inline-block;
+        transform: translateX(-50%);
+        visibility: hidden;
+
+    }
+
+
+    header { color: #333333; line-height: 108px;
+        /*visibility: hidden;*/
+    }
+
+
+    header nav {
+        font-size: 12px; float: right;
+        margin-right: 1%;
+        margin-top: -10px;
+        /*visibility: hidden;*/
+    }
+
+    header nav a {
+        /*color: #333; margin: 0 5px;*/
+        text-decoration: none;
+        padding: 5px;
+        /*visibility: hidden;*/
+
+    }
+
+    .homebuttonbox {
+        display: inline-block;
+        text-align: center;
+        background: rgba(255,255,255,.9);
+        padding: 50px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 10px;
+        border-color: #EFEFEE;
+        border-style: solid;
+        border-width: 2px;
+        width: 70%;
+
+
+    }
+
+    .eventimage {
+        height: 200px;
+        width:285px;
+    }
+}
+
+
+}
+
+
+@media (max-width: 480px) {
+    .headername {
+        color: #48739d; /* fallback for old browsers */
+        color: -webkit-linear-gradient(to left, #5C258D , #4389A2); /* Chrome 10-25, Safari 5.1-6 */
+        color: linear-gradient(to left, #5C258D , #4389A2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-family: 'Pacifico', cursive;
+        font-size: 75px;
+        text-align: center;
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 10px;
+
+    }
+
+    header { color: #333333; line-height: 108px;
+        /*visibility: hidden;*/
+    }
+
+
+    header nav {
+        font-size: 12px; float: right;
+        margin-right: 1%;
+        margin-top: -10px;
+        /*visibility: hidden;*/
+    }
+
+    header nav a {
+        /*color: #333; margin: 0 5px;*/
+        text-decoration: none;
+        padding: 5px;
+        /*visibility: hidden;*/
+
+    }
+
+    .homebuttonbox {
+        display: inline-block;
+        text-align: center;
+        background: rgba(255,255,255,.9);
+        padding: 50px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 10px;
+        border-color: #EFEFEE;
+        border-style: solid;
+        border-width: 2px;
+        width: 70%;
+
+
+    }
+
+    .eventimage {
+        height: 200px;
+        width:285px;
+    }
+}
+
+
+.homepagediv {
+    background-color: #0B0C1A;
+    width: 400px;
+    height: 350px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    border-radius: 5px;
+
+
+}

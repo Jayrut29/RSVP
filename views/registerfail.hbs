@@ -1,0 +1,32 @@
+<body class="signonbody">
+
+
+<div class="registertext">
+
+<h1>Welcome to RSVP</h1>
+
+
+</div>
+
+<div class="registerform">
+    <div class="row">
+        <p>Sorry that email address is already registered.</p>
+
+
+
+        <div class="twelve columns">
+
+            <form action="/register/verify" method="post">
+                <input type="text" name="name" placeholder="name" required> <br><br>
+                <input type="text" name="email" placeholder="email" required> <br><br>
+                <input type="password" name="password_hash" placeholder="password" required><br><br>
+                <input type="submit" value="Sign Up!" class="coloredbutton"></input>
+                <input type="button" Value="Returning User" Onclick="window.location.href='/login'">
+
+            </form>
+
+        </div>
+
+    </div>
+
+
